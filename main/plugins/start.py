@@ -14,7 +14,7 @@ from ethon.mystarts import vc_menu
 async def start(event):
     await event.reply(f'{st}', 
                       buttons=[
-                              [Button.inline("Menu.", data="menu")]
+                              [Button.inline("MENU", data="menu")]
                               ])
     
 @Drone.on(events.callbackquery.CallbackQuery(data="menu"))
@@ -23,9 +23,9 @@ async def menu(event):
     
 @Drone.on(events.callbackquery.CallbackQuery(data="info"))
 async def info(event):
-    await event.edit(f'**ℹ️NFO:**\n\n{info_text}',
+    await event.edit(f'**Info :**\n{info_text}',
                     buttons=[[
-                         Button.inline("Menu.", data="menu")]])
+                         Button.inline("MENU", data="menu")]])
     
 @Drone.on(events.callbackquery.CallbackQuery(data="notice"))
 async def notice(event):
@@ -35,12 +35,12 @@ async def notice(event):
 async def source(event):
     await event.edit(source_text,
                     buttons=[[
-                         Button.url("FOR PERSONAL USE", url="https://github.com/vasusen-code/videoconvertor/tree/main"),
-                         Button.url("FOR YOUR CHANNEL ", url="https://github.com/vasusen-code/videoconvertor/")]])
+                         Button.url("Channel Join Ga", url="https://t.me/TheAnimeEncodes"),
+                         Button.url("Muskoni", url="https://t.me/TheAnimeEncodes")]])
                     
 @Drone.on(events.callbackquery.CallbackQuery(data="help"))
 async def help(event):
-    await event.edit('**👥HELP & SETTINGS.**',
+    await event.edit('**Help**',
                     buttons=[[
                          Button.inline("SET THUMB", data="sett"),
                          Button.inline("REM THUMB", data='remt')],
@@ -54,7 +54,7 @@ async def help(event):
 async def plugins(event):
     await event.edit(f'{help_text}',
                     buttons=[[
-                         Button.inline("Menu.", data="menu")]])
+                         Button.inline("MENU", data="menu")]])
     
 @Drone.on(events.callbackquery.CallbackQuery(data="sett"))
 async def sett(event):    
@@ -62,7 +62,7 @@ async def sett(event):
     msg = await button.get_reply_message() 
     await event.delete()
     async with Drone.conversation(event.chat_id) as conv: 
-        xx = await conv.send_message("Send me any image for thumbnail as a `reply` to this message.")
+        xx = await conv.send_message("Send Me Any Image For Thumbnail As A `reply` To This Message")
         x = await conv.get_reply()
         if not x.media:
             xx.edit("No media found.")
@@ -70,9 +70,9 @@ async def sett(event):
         if not 'png' in mime:
             if not 'jpg' in mime:
                 if not 'jpeg' in mime:
-                    return await xx.edit("No image found.")
+                    return await xx.edit("No Image Founded")
         await xx.delete()
-        t = await event.client.send_message(event.chat_id, 'Trying.')
+        t = await event.client.send_message(event.chat_id, 'Trying')
         path = await event.client.download_media(x.media)
         if os.path.exists(f'{event.sender_id}.jpg'):
             os.remove(f'{event.sender_id}.jpg')
@@ -81,10 +81,10 @@ async def sett(event):
         
 @Drone.on(events.callbackquery.CallbackQuery(data="remt"))
 async def remt(event):  
-    await event.edit('Trying.')
+    await event.edit('Trying')
     try:
         os.remove(f'{event.sender_id}.jpg')
         await event.edit('Removed!')
     except Exception:
-        await event.edit("No thumbnail saved.")
+        await event.edit("No Thumbnail Saved")
     

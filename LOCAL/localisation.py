@@ -1,42 +1,28 @@
 #Don't be a thief by stealing other's Hardwork, it took time and effort to make this repo.
 #Respect my work by not making any changes here.
 
-START_TEXT = "Send me any file to begin."
+START_TEXT = "Encoder Bot Ni"
 
-FORCE_SUB_TEXT = "In order to use this bot, you've to join my parent channel."
+FORCE_SUB_TEXT = "Join Avvu"
 
-CHANNEL_LINK = "https://t.me/DroneBots"
+CHANNEL_LINK = "https://t.me/TheAnimeEncodes"
 
-SUPPORT_LINK = "https://t.me/TeamDrone"
+SUPPORT_LINK = "https://t.me/TheAnimeEncodes"
 
-info_text = "This bot is developed by @MaheshChauhan\n\nWritten in python library TELETHON.\n\nBot by : @DroneBots\nSupport : @TeamDrone\n\nV1.4"   
+info_text = "TheLeo Bhai Ki Right Hand Ni Emoji 🥺"   
 
-help_text = """**v1.4**
+help_text = """ Encode , Rename And More"""
 
-•`Encode` - encode your video into different lib format or resolution
+source_text = "Peddha Plan Ea Emoji 🥺"
 
-•`HEVC compress` - negligible loss compression
+DEV = "Kulli & Leo Bhai Thopu Dammunte Apu Emoji 🥺"
 
-•`FAST compress` - Very fast and Efficient compression
+spam_notice = "Uko Bro Emoji 🥺 , Jara One By One Pumpu , Dunnaku Nannu"
 
-•`Convert` - change formats or extract audio of any video
+JPG = "https://te.legra.ph/file/8547df8778deb336b660c.jpg"
 
-•`Rename` - rename any file, extension not required
+JPG0 = 'https://te.legra.ph/file/8547df8778deb336b660c.jpg'
 
-•`SSHOTS` - generate 10 screenshots of your video
+JPG2 = "https://te.legra.ph/file/8547df8778deb336b660c.jpg"
 
-•`Trim` - cut your videos"""
-
-source_text = "**Deploy your own bot**"
-
-DEV = "https://t.me/MaheshChauhan"
-
-spam_notice = "This bot is hosted on heroku, and hence can just run one process at a time.Spamming the bot or encoding adult videos will lead you to a ban."
-
-JPG = "LOCAL/video_convertor.jpg"
-
-JPG0 = 'https://telegra.ph/file/d98c559b56ef884ef3bad.jpg'
-
-JPG2 = "LOCAL/20211215_165751.jpg"
-
-JPG3 = "LOCAL/PicsArt_12-16-08.57.15.jpg"
+JPG3 = "https://te.legra.ph/file/8547df8778deb336b660c.jpg"
